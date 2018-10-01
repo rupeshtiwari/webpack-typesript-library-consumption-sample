@@ -1,0 +1,20 @@
+{
+  "name": "lib-pj",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^10.11.3",
+    "@types/webpack": "^4.4.13",
+    "declaration-bundler-webpack-plugin": "^1.0.3",
+    "ts-loader": "^5.2.1",
+    "typescript": "^3.1.1",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
+  }
+}
