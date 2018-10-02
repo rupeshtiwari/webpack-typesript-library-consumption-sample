@@ -1,6 +1,7 @@
-# Welcome
+# Goal
 
-To the project where we are demonstrating how to
+This project is demonstrating how to create your own library using typescript and webpack. 
+Then consume that library in another webpack project. 
 
 - create a library from typescript
 - create a bundle for javascript
