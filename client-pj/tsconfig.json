@@ -1,14 +1,21 @@
 {
-    "compilerOptions": {
-      "module": "commonjs",
-      "noImplicitAny": true,
-      "removeComments": true,
-      "preserveConstEnums": true,
-      "sourceMap": true,
-      "declaration": true,
-      "moduleResolution": "node",
-      "outDir": "./dist"
-    },
-    "include": ["src"]
-  }
-  
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "noImplicitAny": false,
+    "removeComments": true,
+    "noLib": false,
+    "declaration": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "noEmitHelpers": false,
+    "outDir": "./dist",
+    "baseUrl": ".",
+    "noEmitOnError": true
+  },
+  "compileOnSave": false,
+  "exclude": ["./node_modules", "./dist"],
+  "include": ["./src/**/*"]
+}

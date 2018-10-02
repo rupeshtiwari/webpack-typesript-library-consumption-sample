@@ -1,1 +1,3 @@
-import './calculator/calc';
+
+export * from  './calculator/calc';
+

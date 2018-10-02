@@ -1,16 +1,15 @@
-const DeclarationBundlerPlugin = require('declaration-bundler-webpack-plugin');
+const DeclarationBundlerPlugin = require('./declaration-bundler-webpack-plugin.fix');
 const path = require('path');
 const DIST = path.resolve(__dirname, 'dist');
 module.exports = {
-  mode: 'production',
+  mode: 'development',
   entry: {
     starter: path.resolve(__dirname, './src/index.ts'),
   },
   output: {
     path: DIST,
-    library: 'mylib',
     libraryTarget: 'commonjs',
-    filename: 'mylib.js',
+    filename: 'index.js',
   },
   resolve: { extensions: ['.ts'] },
   module: {
@@ -26,7 +25,7 @@ module.exports = {
   plugins: [
     new DeclarationBundlerPlugin({
       moduleName: 'mylib',
-      out: DIST,
+      out: './index.d.ts',
     }),
   ],
 };

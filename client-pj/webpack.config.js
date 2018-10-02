@@ -1,24 +1,45 @@
+const webpack = require('webpack');
 const path = require('path');
+const ROOT = __dirname;
+const DESTINATION = path.join(ROOT, '/dist');
+/** wepback resolve */
+const RESOLVE = {
+  extensions: ['.tsx', '.ts', '.js', '.html'],
+};
+
+/** webpack plugins */
+const PLUGINS = [];
+const MODULE = {
+  rules: [
+    // Scripts
+    {
+      test: /\.ts$/,
+      exclude: [/node_modules/],
+      loader: 'ts-loader',
+      include: [ROOT],
+    },
+  ],
+};
+const OUTPUT = {
+  filename: 'index.js',
+  libraryTarget: 'umd',
+  library: 'myclient',
+  path: DESTINATION,
+};
+
 module.exports = {
-  mode: 'production',
+  node: {
+    fs: 'empty'
+  },
   entry: {
-    starter: path.resolve(__dirname, './src/index.ts'),
+    app: ROOT + '/src/index.ts',
   },
-  output: {
-    path: path.resolve(__dirname, 'dist'),
-    library: 'mylib',
-    libraryTarget: 'umd',
-    filename: 'mylib.js',
-  },
-  resolve: { extensions: ['.ts'] },
-  module: {
-    rules: [
-      {
-        test: /\.ts$/,
-        exclude: [/node_modules/],
-        loader: 'ts-loader',
-      },
-    ],
-  },
+  context: ROOT,
+  resolve: RESOLVE,
+  mode: 'development',
+  module: MODULE,
+  plugins: PLUGINS,
   devtool: 'source-map',
+  devServer: {},
+  output: OUTPUT,
 };

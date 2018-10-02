@@ -1,5 +1,6 @@
-import { add } from 'mylib/calculator/calc';
+import { add } from 'mylib';
 export function doSum() {
   const result = add(1, 2);
-  console.log('add(1,2)', result);
+  console.log(result, 3);
 }
+doSum();

@@ -1,10 +1,10 @@
 {
-  "name": "client-pj",
+  "name": "demo-app",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "demo app",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack --display-error-details",
+    "test":"ts-node src/cart.ts"
   },
   "keywords": [],
   "author": "",
@@ -16,5 +16,6 @@
     "typescript": "^3.1.1",
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.2"
-  }
+  },
+  "dependencies": {}
 }
