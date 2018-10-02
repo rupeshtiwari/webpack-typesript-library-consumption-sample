@@ -24,7 +24,7 @@ module.exports = {
   devtool: 'source-map',
   plugins: [
     new DeclarationBundlerPlugin({
-      moduleName: 'mylib',
+      moduleName: '"mylib"',
       out: './index.d.ts',
     }),
   ],
