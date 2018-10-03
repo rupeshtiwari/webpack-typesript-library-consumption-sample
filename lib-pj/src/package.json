@@ -1,5 +1,5 @@
 {
-    "name": "mylib",
+    "name": "@mycomp/mylib",
     "version": "1.0.0",
     "description": "type definitions",
     "author": "mylib",

@@ -26,9 +26,9 @@ module.exports = {
   },
   devtool: 'source-map',
   plugins: [
-    new CleanWebpackPlugin(['../@types', '../dist']),
+    new CleanWebpackPlugin(['./@types', './dist']),
     new DeclarationBundlerPlugin({
-      moduleName: '"mylib"',
+      moduleName: '"@mycomp/mylib"',
       out: '../@types/index.d.ts',
     }),
     new CopyWebpackPlugin([

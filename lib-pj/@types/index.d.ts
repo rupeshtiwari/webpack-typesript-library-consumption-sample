@@ -1,4 +1,4 @@
-declare module "mylib"
+declare module "@mycomp/mylib"
 {
 	export * from './models/product';
 	export * from './calculator/calc';
