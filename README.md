@@ -1,3 +1,8 @@
+# Introduction
+In you enterprise if you want to create shared javascript library then webpack and typescript comes first in mind. However, there is no sample project or example exist in google that demonstrates how to acheive it. 
+In this sample project I tried to demonstrate how can you create an library project using typescript and webpack and then create your own npm packages both for javascript bundle and @types bundle. 
+Also you will see how can you use them in your sample project. 
+I hope you will enjoy this project and learn something!
 # Goal
 
 This project is demonstrating how to create your own library using typescript and webpack.
