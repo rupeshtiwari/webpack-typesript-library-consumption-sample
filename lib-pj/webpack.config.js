@@ -41,6 +41,5 @@ module.exports = {
         to: '../dist/package.json',
       },
     ]),
-    //  new CopyWebpackPlugin([ {from: path.resolve(DIST,'@types'), to:'../@types'} ])
   ],
 };

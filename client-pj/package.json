@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "demo app",
   "scripts": {
-    "build": "npm link @types/mylib && npm link @mycomp/mylib && npm run build:webpack",
+    "build": "npm link @types/mycomp-mylib && npm link @mycomp/mylib && npm run build:webpack",
     "build:webpack": "webpack --display-error-details",
     "test": "ts-node src/cart.ts"
   },
