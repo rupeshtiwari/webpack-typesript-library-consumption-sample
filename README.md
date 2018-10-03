@@ -34,8 +34,9 @@ We are using
     npm run build
     cd dist
     npm link
+    cd "@types"
+    npm link
 
     # go to client-pj and run below scripts#
-    npm link my-lib
     npm run build
     

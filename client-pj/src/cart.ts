@@ -1,6 +1,5 @@
 import { add, Util, User, Product } from '@mycomp/mylib';
 
-  
 
 export function doSum() {
   const result = add(1, 2);

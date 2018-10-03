@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack && npm run linkprojects",
+    "linkprojects" : "cd dist && npm link && cd.. && cd @types && npm link && cd.."
   },
   "keywords": [],
   "author": "",
