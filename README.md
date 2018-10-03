@@ -79,3 +79,7 @@ In order to
 
 ## Questions
 If you have any questions or issues or suggestions please feel free to communicate me or create issue in this git repository. 
+
+## Releases
+[See all of the releases here](
+https://github.com/roopkt/webpack-typesript-library-consumption-sample/releases/)
