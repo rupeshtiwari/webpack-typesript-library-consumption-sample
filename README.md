@@ -1,9 +1,13 @@
-# Introduction
-In you enterprise if you want to create shared javascript library then webpack and typescript comes first in mind. However, there is no sample project or example exist in google that demonstrates how to acheive it. 
-In this sample project I tried to demonstrate how can you create an library project using typescript and webpack and then create your own npm packages both for javascript bundle and @types bundle. 
-Also you will see how can you use them in your sample project. 
+# Create Typescript Library Project
+
+## Introduction
+
+In you enterprise if you want to create shared javascript library then webpack and typescript comes first in mind. However, there is no sample project or example exist in google that demonstrates how to acheive it.
+In this sample project I tried to demonstrate how can you create an library project using typescript and webpack and then create your own npm packages both for javascript bundle and @types bundle.
+Also you will see how can you use them in your sample project.
 I hope you will enjoy this project and learn something!
-# Goal
+
+## Goal
 
 This project is demonstrating how to create your own library using typescript and webpack.
 Then consume that library in another webpack project.
@@ -21,7 +25,14 @@ We are using
 - `ts-loader` for compiling typescript and
 - `declaration-bundler-webpack-plugin` for bundling type definition files
 
-## How get project at local box
+## Tools
+
+We are using:
+
+- Webpack and
+- Typscript
+
+## How get this project at your machine
 
     # in your machine open command prompt and run below script #
     git clone https://github.com/roopkt/webpack-typesript-library-consumption-sample.git
@@ -38,7 +49,7 @@ We want to install npm packages to both `client-pj` and `lib-pj` project. Please
 
 ## How to run build
 
-We will first build `lib-pj` so that we can create output from this project. 
+We will first build `lib-pj` so that we can create output from this project.
 
      # go to lib-pj and run below scripts #
        npm run build
@@ -56,7 +67,7 @@ After running above build script in `lib-pj` you will see below 2 folders:
   - index.d.ts
   - package.json
 
- Now build `client-pj` by running build script, which will link to above 2 npm packages. 
+Now build `client-pj` by running build script, which will link to above 2 npm packages.
 
       # go to client-pj and run below scripts
         npm run build
@@ -65,3 +76,6 @@ After running above build script in `lib-pj` you will see below 2 folders:
 
 Client Project (`client-pj`) is consuming output of Library Project (`lib-pj`)
 In order to
+
+## Questions
+If you have any questions or issues or suggestions please feel free to communicate me or create issue in this git repository. 
