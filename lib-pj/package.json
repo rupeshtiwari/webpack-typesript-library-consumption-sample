@@ -11,6 +11,8 @@
   "devDependencies": {
     "@types/node": "^10.11.3",
     "@types/webpack": "^4.4.13",
+    "clean-webpack-plugin": "^0.1.19",
+    "copy-webpack-plugin": "^4.5.2",
     "declaration-bundler-webpack-plugin": "^1.0.3",
     "ts-loader": "^5.2.1",
     "typescript": "^3.1.1",

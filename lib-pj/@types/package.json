@@ -1,0 +1,7 @@
+{
+    "name": "@types/mylib",
+    "version": "1.0.0",
+    "description": "type definitions",
+    "author": "mylib",
+    "license": "ISC"
+}

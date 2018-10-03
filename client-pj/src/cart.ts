@@ -1,4 +1,4 @@
-import { User, add, Util, Product } from 'mylib';
+import { add, Util, User, Product } from 'mylib';
 
 export function doSum() {
   const result = add(1, 2);
