@@ -7,6 +7,9 @@ In this sample project I tried to demonstrate how can you create an library proj
 Also you will see how can you use them in your sample project.
 I hope you will enjoy this project and learn something!
 
+[docs](https://roopkt.github.io/webpack-typesript-library-consumption-sample/)
+
+
 ## Goal
 
 This project is demonstrating how to create your own library using typescript and webpack.
