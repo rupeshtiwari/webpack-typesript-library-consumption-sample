@@ -75,10 +75,6 @@ Now build `client-pj` by running build script, which will link to above 2 npm pa
       # go to client-pj and run below scripts
         npm run build
 
-## How to test client project
-
-Client Project (`client-pj`) is consuming output of Library Project (`lib-pj`)
-In order to
 
 ## Questions
 If you have any questions or issues or suggestions please feel free to communicate me or create issue in this git repository. 
